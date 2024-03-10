@@ -42,7 +42,7 @@ sudo ln -s ~/.cargo/bin/zellij /usr/local/bin
 
 Then, finally set **Alacritty** as your default terminal emulator.
 
-## Setup
+### Theme & Configs
 
 First, clone this repository:
 ```bash
