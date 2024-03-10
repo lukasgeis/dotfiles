@@ -1,11 +1,5 @@
 dotfiles_dir = "dotfiles"
 
-[settings]
-
-posthooks = [
-    "zellij da -y"
-]
-
 [settings.dots]
 # Gitconfig
 gitconfig = { source = ".gitconfig", target = ".gitconfig" }

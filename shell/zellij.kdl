@@ -13,3 +13,5 @@ plugins {
     compact-bar { path "compact-bar"; }
 }
 theme "catppuccin-mocha"
+
+session_serialization false
