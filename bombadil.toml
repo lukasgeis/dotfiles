@@ -7,6 +7,10 @@ posthooks = [
 ]
 
 [settings.dots]
+# Gitconfig
+gitconfig = { source = ".gitconfig", target = ".gitconfig" }
+
+# Shell Setup
 alacritty = { source = "shell/alacritty.toml", target = ".alacritty.toml" }
 zellij = { source = "shell/zellij.kdl", target = ".config/zellij/config.kdl" }
 zsh = { source = "shell/.zshrc", target = ".zshrc" }

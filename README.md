@@ -3,7 +3,12 @@
 This repository contains my dotfiles used for my EndeavorOS setup.
 It uses [toml-bombadil](https://github.com/oknozor/toml-bombadil) as a Dotfile-Manager and is heavily based on [this setup](https_//github.com/EldosHD/dotFiles) with some modifications.
 
-## Installation
+## Important Remarks
+
+Make sure to change **name** and **email** to your own in special files such as `.gitconfig`.
+
+
+## Shell Setup
 
 I use EndeavorOS which is an Arch-based Linux distribution so all following steps are meant to be used on Arch.
 Most commands however can easily be translated to work with other Linux distributions.
