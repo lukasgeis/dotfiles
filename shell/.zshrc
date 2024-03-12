@@ -11,3 +11,7 @@ alias bbl="bombadil link"
 # NeoVim Shortcuts
 alias vim="nvim"
 alias v="nvim ."
+
+# Others
+alias h="cd ~"
+alias la="ls -a"

@@ -9,3 +9,6 @@ alacritty = { source = "shell/alacritty.toml", target = ".alacritty.toml" }
 zellij = { source = "shell/zellij.kdl", target = ".config/zellij/config.kdl" }
 zsh = { source = "shell/.zshrc", target = ".zshrc" }
 starship = { source = "shell/starship.toml", target = ".config/starship.toml" }
+
+# NeoVim
+neovim = { source = "nvim", target = ".config/nvim" }
