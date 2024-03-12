@@ -31,7 +31,6 @@ return {
 
         require("mason").setup({
             ensure_installed = {
-                "rust_analyzer",
                 "rustfmt",
             },
         })
@@ -41,6 +40,7 @@ return {
                 "lua_ls",
                 "pylsp",
                 "clangd",
+                "marksman",
             },
             handlers = {
                 lsp_zero.default_setup,

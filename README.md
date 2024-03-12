@@ -59,3 +59,17 @@ If you make changes, apply these changes with
 bombadil link
 ```
 or the short alias `bbl`.
+
+
+## NeoVim Setup
+
+No real setup has to be done.
+Only NeoVim has to be installed via:
+```bash
+sudo pacman -S --noconfirm neovim 
+```
+
+The setup was built with the help of/inspired by
+* [Kickstart-Nvim](https://github.com/nvim-lua/kickstart.nvim/tree/master)
+* [DreamsOfCode](https://github.com/dreamsofcode-io/DreamNvim/tree/main)
+* [ThePrimeagen](https://www.youtube.com/watch?v=w7i4amO_zaE&ab_channel=ThePrimeagen)
