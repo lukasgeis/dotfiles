@@ -41,6 +41,8 @@ return {
                 "pylsp",
                 "clangd",
                 "marksman",
+                "ltex",
+                "texlab"
             },
             handlers = {
                 lsp_zero.default_setup,
