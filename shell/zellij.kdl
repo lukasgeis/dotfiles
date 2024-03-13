@@ -1,8 +1,14 @@
 keybinds {
+    unbind "Ctrl h"
     shared_except "locked" {
-	bind "Ctrl x" { CloseFocus; SwitchToMode "Normal"; }
 	bind "Alt x" { CloseFocus; SwitchToMode "Normal"; }
     	bind "Alt t" { NewTab; }
+    }
+    move {
+	bind "Ctrl x" { SwitchToMode "Normal"; }
+    }
+    shared_except "move" "locked" {
+	bind "Ctrl x" { SwitchToMode "Move"; }
     }
 }
 

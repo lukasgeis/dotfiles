@@ -69,11 +69,17 @@ return {
 
         local cmp = require("cmp")
         local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-       
+
         cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
         cmp.setup({
             completion = {
                 completeopt = "menu,menuone,noinsert",
+            },
+            mapping = cmp.mapping.preset.insert {
+                ["<C-j>"] = cmp.mapping.select_prev_item(),
+                ["<C-k>"] = cmp.mapping.select_next_item(),
+                ["<C-l>"] = cmp.mapping.confirm { select = true },
+                ["<C-Space>"] = cmp.mapping.complete {},
             },
             sources = {
                 { name = "nvim_lsp" },
