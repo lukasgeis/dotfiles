@@ -15,9 +15,9 @@ Most commands however can easily be translated to work with other Linux distribu
 
 ### Prerequisites
 
-Some of those should already be installed, but we need to install **curl**, **cmake**, a **nerd font**, and finally **zsh**:
+Some of those should already be installed, but we need to install **curl**, **cmake**, a **nerd font**, and finally **zsh** as well as **zoxide**:
 ```bash
-sudo pacman -S --noconfirm curl cmake ttf-firacode-nerd noto-fonts-emoji zsh
+sudo pacman -S --noconfirm curl cmake ttf-firacode-nerd noto-fonts-emoji zsh zoxide
 ```
 
 We then can install **Rust**:

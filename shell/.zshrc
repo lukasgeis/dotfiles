@@ -15,3 +15,6 @@ alias v="nvim ."
 # Others
 alias h="cd ~"
 alias la="ls -a"
+
+# Zoxide
+eval "$(zoxide init --cmd cd zsh)"
