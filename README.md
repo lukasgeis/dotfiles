@@ -64,9 +64,9 @@ or the short alias `bbl`.
 ## NeoVim Setup
 
 No real setup has to be done.
-Only NeoVim has to be installed via:
+Only **NeoVim** as well as **ripgrep** (for Telescope) has to be installed via:
 ```bash
-sudo pacman -S --noconfirm neovim 
+sudo pacman -S --noconfirm neovim ripgrep
 ```
 
 The setup was built with the help of/inspired by
