@@ -20,6 +20,7 @@ return {
                 crates.show()
             end
         },
+        {"rhysd/rust-doc.vim"},
         {"tpope/vim-sleuth"},
     },
     config = function()
