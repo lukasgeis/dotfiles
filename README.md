@@ -79,7 +79,7 @@ The setup was built with the help of/inspired by
 
 Most steps are identical to the above steps (with replacing `pacman` with `apt`).
 The following differ:
-- The **Nerd-Font** can not be installed via one command but instead must be installed manually as described [here](https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0
+- The **Nerd-Font** can not be installed via one command but instead must be installed manually as described [here](https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0)
 - Dependencies for **Alacritty** need to be installed as mentioned [here](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#dependencies)
 - To set **Alacritty** as your default terminal follow the steps [here](https://askubuntu.com/questions/1364954/make-alacritty-the-default-terminal-permanently)
 - Installing **NeoVim** via `apt` only yields version `0.6.x` but we need at least `0.7.0` to make our config work. Thus install via source or from the `ppa:neovim-ppa/unstable` channel
