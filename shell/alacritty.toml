@@ -4,7 +4,7 @@ import = [
 
 [shell]
 program = "zellij"
-args = ["options", "--default-shell", "zsh", "--session-name", "-"]
+args = ["options", "--default-shell", "zsh"]
 
 [window]
 startup_mode = "Maximized"
