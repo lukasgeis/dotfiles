@@ -12,6 +12,10 @@ alias bbl="bombadil link"
 alias vim="nvim"
 alias v="nvim ."
 
+# Rust 
+alias cb="cargo build"
+alias cbr="cargo build --release"
+
 # Others
 alias h="cd ~"
 alias la="ls -a"
