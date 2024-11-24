@@ -9,6 +9,8 @@ return {
 	    "c",
 	    "vim",
 	    "bash",
+	    "latex",
+	    "bibtex"
 	},
 	auto_install = true,
 	highlight = {
