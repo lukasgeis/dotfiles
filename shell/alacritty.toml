@@ -1,8 +1,8 @@
-import = [
+general.import = [
     "~/dotfiles/shell/alacritty-catppuccin-mocha-theme.toml",
 ]
 
-[shell]
+[terminal.shell]
 program = "zellij"
 args = ["options", "--default-shell", "zsh"]
 
