@@ -58,6 +58,7 @@ return {
                     diagnostics = {
                         globals = { "vim" },
                         disable = { "different-requires" },
+                        refreshSupport = false,
                     }
                 },
             },
