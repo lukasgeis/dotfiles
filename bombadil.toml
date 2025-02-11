@@ -1,5 +1,10 @@
 dotfiles_dir = "dotfiles"
 
+[settings]
+prehooks = [
+    "mkdir -p ~/.config/zellij"
+]
+
 [settings.dots]
 # Shell Setup
 alacritty = { source = "shell/alacritty.toml", target = ".alacritty.toml" }
