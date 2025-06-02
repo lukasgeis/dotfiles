@@ -22,6 +22,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.keymap.set("n", "<leader><leader><leader>", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float)
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then

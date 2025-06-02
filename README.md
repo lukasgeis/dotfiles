@@ -22,10 +22,10 @@ We then can install **Rust**:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-and then **toml-bombadil**, as well as **Alacritty**, **Zellij**, **Starship**, as well as **zoxide**:
+and then **toml-bombadil**, as well as **Alacritty**, **Zellij**, **Starship**, as well as **tree-sitter-cli** (for Neovim):
 
 ```bash
-cargo install toml-bombadil alacritty zellij starship zoxide
+cargo install toml-bombadil alacritty zellij starship tree-sitter-cli
 ```
 
 Note that installations with **cargo** can be spedup by first installing **cargo-binstall**
@@ -91,3 +91,4 @@ The following differ:
 - Dependencies for **Alacritty** need to be installed as mentioned [here](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#dependencies)
 - To set **Alacritty** as your default terminal follow the steps [here](https://askubuntu.com/questions/1364954/make-alacritty-the-default-terminal-permanently)
 - Installing **NeoVim** via `apt` only yields version `0.6.x` but we need at least `0.7.0` to make our config work. Thus install via source or from the `ppa:neovim-ppa/unstable` channel
+- For **pylsp** we also need to install `python3-venv` 
