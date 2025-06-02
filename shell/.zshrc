@@ -22,3 +22,6 @@ alias la="ls -a"
 
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+# Ubuntu-Specific
+alias yay="sudo apt-get update && sudo apt-get upgrade -y"
