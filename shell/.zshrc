@@ -25,3 +25,6 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Ubuntu-Specific
 alias yay="sudo apt-get update && sudo apt-get upgrade -y"
+
+# Git
+alias gitrc="GIT_EDITOR=true git rebase --continue"
