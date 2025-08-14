@@ -9,6 +9,7 @@ vim.g.zig_fmt_autosave = 0
 vim.opt.number = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.breakindent = true
+vim.opt.swapfile = false
 vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true

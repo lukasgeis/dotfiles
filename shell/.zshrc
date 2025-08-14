@@ -1,6 +1,10 @@
 # Use Starship
 eval "$(starship init zsh)"
 
+# Editor
+export EDITOR="nvim"
+export SUDO_EDITOR="$EDITOR"
+
 # Save Command-Histories to File
 mkdir -p ~/histories
 alias htf="history > ~/histories/$(date +'%Y-%m-%d_%T')"
