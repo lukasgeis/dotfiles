@@ -1,14 +1,35 @@
-keybinds {
-    unbind "Ctrl h"
+keybinds clear-defaults=true {
+    locked {
+	bind "Alt Shift l" { SwitchToMode "Normal"; }
+	bind "Alt Shift n" { SwitchToMode "Normal"; }
+    }
+
     shared_except "locked" {
-	bind "Alt x" { CloseFocus; SwitchToMode "Normal"; }
-    	bind "Alt t" { NewTab; }
+	bind "Alt Shift l" { SwitchToMode "Locked"; }
+    	bind "Alt Shift n" { SwitchToMode "Normal"; }
+	bind "Alt Shift r" { SwitchToMode "Resize"; }
+   
+	bind "Alt n" { NewPane; }
+	bind "Alt t" { NewTab; }
+	bind "Alt x" { CloseFocus; }
+    
+	bind "Alt left" { MoveFocusOrTab "left"; }
+	bind "Alt right" { MoveFocusOrTab "right"; }
+	bind "Alt down" { MoveFocus "down"; }
+	bind "Alt up" { MoveFocus "up"; }
+    
+	bind "Ctrl q" { Quit; }
     }
-    move {
-	bind "Ctrl x" { SwitchToMode "Normal"; }
-    }
-    shared_except "move" "locked" {
-	bind "Ctrl x" { SwitchToMode "Move"; }
+    resize {
+	bind "left" { Resize "Increase left"; }
+	bind "right" { Resize "Increase right"; }
+	bind "down" { Resize "Increase down"; }
+	bind "up" { Resize "Increase up"; }
+
+	bind "Shift left" { Resize "Decrease left"; }
+	bind "Shift right" { Resize "Decrease right"; }
+	bind "Shift down" { Resize "Decrease down"; }
+	bind "Shift up" { Resize "Decrease up"; }
     }
 }
 
@@ -19,5 +40,9 @@ plugins {
     compact-bar { path "compact-bar"; }
 }
 theme "catppuccin-mocha"
+
+default_layout "compact"
+
+show_startup_tips false
 
 session_serialization false
