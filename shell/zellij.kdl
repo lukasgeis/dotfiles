@@ -30,6 +30,8 @@ keybinds clear-defaults=true {
 	bind "Shift right" { Resize "Decrease right"; }
 	bind "Shift down" { Resize "Decrease down"; }
 	bind "Shift up" { Resize "Decrease up"; }
+
+	bind "Alt Shift r" { SwitchToMode "Normal"; }
     }
 }
 
