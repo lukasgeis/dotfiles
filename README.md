@@ -10,7 +10,7 @@ It uses [toml-bombadil](https://github.com/oknozor/toml-bombadil) as a Dotfile-M
 Some of those should already be installed, but we need to install **curl**, **cmake**, a **nerd font**, and finally **zsh**:
 
 ```bash
-sudo apt install curl cmake zsh zoxide g++ pkg-config libfontconfig1-dev libxcb-xfices0-dev libxkbcommon-dev python3
+sudo apt install curl cmake zsh zoxide g++ pkg-config libfontconfig1-dev libxcb-xfices0-dev libxkbcommon-dev python3 nodejs
 ```
 
 We then can install **Rust**:
@@ -31,7 +31,10 @@ To make **Zellij** work, we need to link it into a directory in `PATH` with:
 sudo ln -s ~/.cargo/bin/zellij /usr/local/bin
 ```
 
-Then, finally set **Alacritty** as your default terminal emulator as described [here](https://askubuntu.com/questions/1364954/make-alacritty-the-default-terminal-permanently).
+Then, finally set **Alacritty** as your default terminal emulator with
+```bash 
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator ~/.cargo/bin/alacritty 50
+```
 
 ### Theme & Configs
 
@@ -76,8 +79,28 @@ sudo apt update
 sudo apt install neovim ripgrep python3-venv 
 ```
 
+In case, the version of `node` is not high enough, install the required version via
+```bash
+curl -sL https://deb.nodesource.com/setup_<Version>.x | sudo -E bash -
+sudo apt install nodejs
+```
+
+After opening Neovim, all plugins should get installed, only `Copilot` needs a manuel setup via `:Copilot signin`
+
+## Further Stuff
+
+I also like to set the following to allow me to scroll much faster
+```bash 
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 20
+gsettings set org.gnome.desktop.peripherals.keyboard delay 200
+```
+
+## Credits
+
 The setup was built with the help of/inspired by
 
 - [Kickstart-Nvim](https://github.com/nvim-lua/kickstart.nvim/tree/master)
 - [DreamsOfCode](https://github.com/dreamsofcode-io/DreamNvim/tree/main)
 - [ThePrimeagen](https://www.youtube.com/watch?v=w7i4amO_zaE&ab_channel=ThePrimeagen)
+
+Also check out the [NerdFont-Website](https://www.nerdfonts.com/).
