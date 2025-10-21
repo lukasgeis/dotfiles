@@ -23,6 +23,8 @@ alias cbr="cargo build --release"
 # Others
 alias h="cd ~"
 alias la="ls -a"
+alias e="eza --all --long --git --icons --group-directories-first --header --smart-group"
+alias es="e --total-size"
 
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"

@@ -96,5 +96,8 @@ return {
                 { name = "buffer" },
             }
         })
+
+        vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
+        vim.keymap.set("v", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
     end
 }
