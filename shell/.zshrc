@@ -30,7 +30,7 @@ alias es="e --total-size"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Ubuntu-Specific
-alias yay="sudo apt-get update && sudo apt-get upgrade -y && sudo snap refresh"
+alias yay="sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo snap refresh"
 
 # Git
 alias gitrc="GIT_EDITOR=true git rebase --continue"
