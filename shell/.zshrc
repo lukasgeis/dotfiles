@@ -25,6 +25,7 @@ alias h="cd ~"
 alias la="ls -a"
 alias e="eza --all --long --git --icons --group-directories-first --header --smart-group"
 alias es="e --total-size"
+alias rf="ruff format --line-length=79"
 
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
